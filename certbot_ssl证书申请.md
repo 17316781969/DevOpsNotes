@@ -23,9 +23,10 @@ certbot 1.7.0
 ```
 certbot -d example.com -d *.example.com  --manual --config-dir config --work-dir work --logs-dir logs --preferred-challenges dns certonly
 ```
-注:==会出现两个txt值,解析时会冲突,需要将命令执行两次,即可实现主域名和泛域名共用同一个证书==
+> [!NOTE]
+> 注:==会出现两个txt值,解析时会冲突,需要将命令执行两次,即可实现主域名和泛域名共用同一个证书==
 # txt值验证:
 ```
 dig +noall +answer "_acme-challenge.example.com" -t txt
 ```
-`#0969DA`The background color is `#ffffff` for light mode and `#000000` for dark mode.
+
