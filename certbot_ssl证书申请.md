@@ -28,3 +28,4 @@ certbot -d example.com -d *.example.com  --manual --config-dir config --work-dir
 ```
 dig +noall +answer "_acme-challenge.example.com" -t txt
 ```
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
